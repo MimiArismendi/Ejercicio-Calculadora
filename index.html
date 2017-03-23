@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <h1 align = center>CALCULADORA</h1>
+    <table align = center id = "tabla">
+      <tr>
+        <td colspan = "4"><input type = "text" id = "resultado"></input></td>
+      </tr>
+      <tr>
+        <td><input type = "button" name="button" value = "C" id ="C" onclick="limpiar();"/></td>
+        <td><input type = "button" name="button" value = "+/-" id = "suma" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "%" id = "porcentaje" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "/" id = "división" onclick="mostrarResultado(this.value);"/></td>
+      </tr>
+
+      <tr>
+        <td><input type = "button" name="button" value = "1" id = "1" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "2" id = "2" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "3" id = "3" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "*" id = "multiplicación" onclick="mostrarResultado(this.value);"/></td>
+      </tr>
+      <tr>
+        <td><input type = "button" name="button" value = "4" id = "4" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "5" id = "5" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "6" id = "6" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "-" id = "resta" onclick="mostrarResultado(this.value);"/></td>
+      </tr>
+      <tr>
+        <td><input type = "button" name="button" value = "7" id = "7" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "8" id = "8" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "9" id = "9" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "+" id = "suma" onclick="mostrarResultado(this.value);"/></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type = "button" name = "button" style = "width:75%"; value = "0" id = "0" onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "." id = "." onclick="mostrarResultado(this.value);"/></td>
+        <td><input type = "button" name="button" value = "=" id = "igual" onclick="mostrarResultado(this.value);"/></td>
+      </tr>
+    </table>
+    <script src = "assets/js/calculadora.js"></script>
+  </body>
+</html>
